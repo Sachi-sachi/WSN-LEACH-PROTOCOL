@@ -6,11 +6,11 @@ import pandas as pd
 
 
 def to_excel(data):
-    workbook = openpyxl.load_workbook("C:\\Users\\saily\\Documents\\WSN_LEACH-main\\sachi.xlsx")
+    workbook = openpyxl.load_workbook("C:\\..results.xlsx")
     # Load an existing file
     worksheet = workbook['Sheet1']
     worksheet.append(data)
-    workbook.save('C:\\Users\\saily\\Documents\\WSN_LEACH-main\\sachi.xlsx')
+    workbook.save('C:\\..results.xlsx')
 
 
 to_excel(["No. of Nodes", "Total rounds", "PDR", "EtoE_Delay"])
